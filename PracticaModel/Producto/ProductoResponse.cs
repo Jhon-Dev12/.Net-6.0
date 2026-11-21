@@ -9,7 +9,10 @@ namespace PracticaModel.Producto
 {
 
 
-    public record ProductoRequest(string? NombreFiltro);
+    public class ProductoRequest
+    {
+        public string? NombreFiltro { get; set; }
+    }
     public class ProductoResponse
     {
         public int Id { get; set; }

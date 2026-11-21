@@ -9,11 +9,12 @@
 	
 	
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
   </ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="../PracticaModel/PracticaModel.csproj"/>
+		<ProjectReference Include="../PracticaModel/PracticaModel.csproj" />
 	</ItemGroup>
 
 </Project>
