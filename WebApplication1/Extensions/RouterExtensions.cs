@@ -7,6 +7,5 @@ namespace WebApplication1.Extensions
         {
             return app.MapPost($"/empresa1{pattern}", handler);
         }
-
     }
 }
