@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PracticaModel.Producto;
+using WebApplication1.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,11 +27,11 @@ app.MapPost("/api/productos", async ([FromBody] ProductoRequest filter,HttpConte
         try {
             PracticaBussiness.Producto.ProductoBL prod = new PracticaBussiness.Producto.ProductoBL();
             var list = await prod.getProductos(filter, connString);
-            return Results.Ok(list);
+            return Helper.Ok(context,list);
         }
         catch (Exception ex)
         {
-            return Results.BadRequest(new { error = ex.Message });
+            return Helper.BadRequest(context,ex);
         }
 
     });
