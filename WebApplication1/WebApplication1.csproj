@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="../PracticaData/PracticaData.csproj" />
+		<ProjectReference Include="../PracticaModel/PracticaModel.csproj" />
+		<ProjectReference Include="../PracticaBussiness/PracticaBussiness.csproj" />
+	</ItemGroup>
+
+</Project>

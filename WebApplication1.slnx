@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="PracticaBussiness/PracticaBussiness.csproj" />
+  <Project Path="PracticaData/PracticaData.csproj" />
+  <Project Path="PracticaInfraestructure/PracticaInfraestructure.csproj" />
+  <Project Path="PracticaModel/PracticaModel.csproj" />
+  <Project Path="WebApplication1/WebApplication1.csproj" />
+</Solution>
